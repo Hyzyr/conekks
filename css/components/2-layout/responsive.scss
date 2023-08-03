@@ -1,0 +1,42 @@
+@media (max-width: 1580px) {
+  html {
+    font-size: 1.78vh;
+  }
+}
+@media (max-width: 1440px) and (min-height: 800px) {
+  html {
+    font-size: 1.8vh;
+  }
+  @include blog-1440-800_and_1160-768;
+}
+@media (max-width: 1160px) and (min-height: 768px) {
+  @include blog-1440-800_and_1160-768;
+}
+@media (max-width: 1160px) {
+}
+@media (max-width: 1025px) {
+}
+@media (max-width: 840px) {
+  html {
+    font-size: 20px;
+  }
+  .autoContainer {
+    padding: 0 20px;
+  }
+  @include header-840;
+  @include blog-840;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 3.2vw;
+  }
+  @include blog-580;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 4.5vw;
+  }
+  @include blog-480;
+}
