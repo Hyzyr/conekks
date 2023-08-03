@@ -7,10 +7,6 @@
   html {
     font-size: 1.8vh;
   }
-  @include blog-1440-800_and_1160-768;
-}
-@media (max-width: 1160px) and (min-height: 768px) {
-  @include blog-1440-800_and_1160-768;
 }
 @media (max-width: 1160px) {
 }
@@ -24,6 +20,7 @@
     padding: 0 20px;
   }
   @include header-840;
+  @include footer-840;
   @include blog-840;
 }
 @media (max-width: 768px) {
@@ -32,11 +29,13 @@
   html {
     font-size: 3.2vw;
   }
-  @include blog-580;
 }
 @media (max-width: 480px) {
   html {
     font-size: 4.5vw;
+  }
+  .autoContainer {
+    padding: 0 15px;
   }
   @include blog-480;
 }

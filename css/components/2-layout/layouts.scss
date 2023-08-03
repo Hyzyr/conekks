@@ -1,12 +1,14 @@
 .blog {
   position: relative;
-  height: calc(100vh - 3.7rem);
+  // height: calc(100vh - 3.7rem);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   &__inner {
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex-grow: 1;
     &-body {
       display: flex;
       flex-grow: 1;
@@ -30,30 +32,6 @@
         left: -500%;
       }
     }
-    &-column {
-      width: 29%;
-      padding: 5.125rem 0.93rem 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      &._sm {
-        padding-top: 11.5rem;
-        width: 17.5%;
-      }
-      &._lg {
-        padding-top: 10.5rem;
-        width: 53.5%;
-        border: 1px solid $black-3;
-        border-top: unset;
-        border-bottom: unset;
-      }
-      &._footer {
-        padding: 0 0.93rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
     &-wrapper {
       height: 4rem;
       display: flex;
@@ -64,8 +42,9 @@
       display: flex;
       flex-direction: column;
       gap: 0.625rem;
-      max-width: 11.625rem;
-      padding: 1.25rem 0;
+      padding: 1.25rem;
+      margin: 0 auto;
+      width: 100%;
       .button {
         margin-right: auto;
         &:nth-child(even) {
@@ -77,6 +56,7 @@
       display: flex;
       flex-direction: column;
       gap: 4.125rem;
+      padding: 1.25rem;
       p {
         font-size: 1.1rem;
         text-transform: uppercase;
@@ -84,41 +64,44 @@
         text-align: center;
       }
     }
-    &-image {
+    &-video {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      max-width: 21.875rem;
+      max-width: 25rem;
       margin: 0 auto;
     }
     &-container {
-      padding: 0.9375rem 1.25rem;
-      background: $black-2;
-      border-radius: 0.31rem;
+      // padding: 0.9375rem 1.25rem;
       display: flex;
       flex-direction: column;
       gap: 0.9375rem;
+      padding: 1.25rem;
     }
     &-banner {
+      padding: 1.25rem;
       .ratioImage {
-        padding-bottom: 68%;
+        padding-bottom: 57%;
       }
       &._lg {
         .ratioImage {
-          padding-bottom: 131%;
+          padding-bottom: 100%;
         }
       }
     }
     &-frame {
       position: relative;
-      padding-bottom: 60%;
+      padding: 0.5rem 1.25rem;
       iframe {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
+      }
+      .ratioImage {
+        padding-bottom: 57%;
       }
     }
     &-group {
@@ -128,7 +111,7 @@
     &-box {
       display: flex;
       flex-direction: column;
-      padding: 1.875rem;
+      padding: 1rem 1.25rem 1rem;
       gap: 0.31rem;
       h4,
       h5,
@@ -150,9 +133,8 @@
       }
     }
     .input {
-      max-width: 25rem;
       margin: 0 auto;
-      padding: 0.75rem 0;
+      padding: 0.75rem 1.25rem;
     }
     h4 {
       text-align: center;
@@ -161,6 +143,7 @@
     &-info {
       display: flex;
       flex-direction: column;
+      padding: 1.25rem;
       p,
       a {
         font-size: 1.35rem;
@@ -173,11 +156,10 @@
       }
     }
     &-contact {
-      max-width: 25rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      padding: 3rem 0 2rem 0;
+      padding: 3rem 1.25rem 2rem;
       &-body {
         display: flex;
         gap: 1.8rem;
@@ -212,108 +194,53 @@
         }
       }
       .button {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         position: relative;
         &._sm {
-          font-size: 0.75rem;
+          font-size: 1.25rem;
         }
         &._lg {
-          font-size: 1.15rem;
+          font-size: 1.45rem;
         }
       }
     }
-  }
-  &__lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-    .line {
-      width: 100%;
-      height: 1px;
-      background-color: $black-3;
-      position: absolute;
-      left: 0;
-      top: 0;
-      &._top {
-        top: 3.625rem;
-      }
-      &._middle {
-        top: unset;
-        bottom: 106px;
-      }
-      &._bottom {
-        top: unset;
-        bottom: 40px;
-      }
+    &-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-  }
-  &__bg {
   }
   .autoContainer {
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
 ._hide {
   display: none;
 }
-.footer {
-  &__inner {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    padding: 0.9375rem;
-    a {
-      color: $white;
-      font-size: 1.25rem;
-      font-weight: 400;
-      text-align: center;
-      &:nth-child(1) {
-        opacity: 0.5;
-      }
-      &:nth-child(2) {
-        margin: 0 0.9375rem;
-      }
-    }
-    &-link {
-      min-width: 6.25rem;
-      position: relative;
-      &:after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        left: 0;
-        bottom: -0.125rem;
-        background: $white;
-      }
-    }
+.row {
+  width: 29%;
+  border: 1px solid $black-3;
+  border-top: unset;
+  &Sm {
+    width: 17.5%;
+    border: 1px solid $black-3;
+    border-top: unset;
   }
-}
-@mixin blog-1440-800_and_1160-768 {
-  .blog {
-    &__inner {
-      &-column {
-        &._sm {
-          padding: 9.7rem 0.93rem 0;
-        }
-        &._lg {
-          padding: 9.7rem 0.93rem 0;
-        }
-        &._footer {
-          padding: 0 0.93rem;
-        }
-      }
-    }
+  &Lg {
+    width: 53.5%;
+    border: 1px solid $black-3;
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
   }
 }
 @mixin blog-840 {
   .blog {
     height: auto;
+    padding-bottom: 30px;
     &__inner {
       &-body {
         flex-direction: column;
@@ -346,13 +273,11 @@
         }
       }
       &-content {
-        gap: 2rem;
+        gap: 1rem;
+        padding: 0;
         p {
           font-size: 1rem;
         }
-      }
-      &-image {
-        max-width: 340px;
       }
       &-wrapper {
         height: auto;
@@ -369,20 +294,23 @@
         }
       }
       &-banner {
+        padding: 0;
+        padding: 30px 0;
         .ratioImage {
           padding-bottom: 60%;
         }
         &._lg {
           max-width: 400px;
           margin: 0 auto;
+          padding: 0;
           .ratioImage {
             padding-bottom: 114%;
           }
         }
       }
       &-frame {
-        padding-bottom: 60%;
         order: -1;
+        padding: 0;
       }
       &-contact {
         display: flex;
@@ -465,6 +393,7 @@
         }
       }
       &-info {
+        padding: 0;
         p {
           font-size: 1rem;
         }
@@ -474,12 +403,12 @@
           margin: -20px 0;
         }
       }
-    }
-    &__lines {
-      display: none;
+      &-social {
+        display: none;
+      }
     }
     .input {
-      padding: 12px 0;
+      padding: 15px 0;
       max-width: 500px;
       position: relative;
       input {
@@ -504,46 +433,24 @@
         background: $black-3;
       }
     }
-  }
-  .footer {
-    margin: 40px 0 30px;
-    border-bottom: 1px solid $black-3;
-    padding-bottom: 10px;
-    &__inner {
-      padding: 0;
-      gap: 1rem;
-      justify-content: center;
-      a {
-        font-size: 0.9rem;
-      }
-      &-link {
-        &:after {
-          bottom: -2px;
-        }
+    .row {
+      &Sm {
+        display: none;
       }
     }
   }
-}
-@mixin blog-580 {
-  // .blog {
-  //   &__inner {
-  //     &-contact {
-  //       &-body {
-  //         .button {
-  //           &--ico {
-  //             font-size: 18px;
-  //             &._sm {
-  //               font-size: 15px;
-  //             }
-  //             &._lg {
-  //               font-size: 22px;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .row {
+    border: unset;
+    width: 100%;
+    &Sm {
+      border: unset;
+      width: 100%;
+    }
+    &Lg {
+      border: unset;
+      width: 100%;
+    }
+  }
 }
 @mixin blog-480 {
   .blog {

@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
-  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <link rel="icon" href="images/logo-lg.png" />
+
   <title>Home</title>
 </head>
 
@@ -16,15 +17,21 @@
     <header class="header" id="header">
       <div class="autoContainer">
         <div class="header__inner">
-          <a href="/" class="header__inner-logo">
-            <span class="logo">
-              <img src="images/logo-lg.png" alt="%ProjectName%" />
-            </span>
-          </a>
-          <div class="header__inner-image">
-            <img src="./images/logo-light.png" alt="">
+          <div class="header__inner-row rowSm">
+            <a href="/" class="header__inner-logo">
+              <span class="logo">
+                <img src="images/logo-lg.png" alt="%ProjectName%" />
+              </span>
+            </a>
           </div>
-          <button class="burger" id="menuBtn"></button>
+          <div class="header__inner-row  rowLg">
+            <div class="header__inner-image">
+              <img src="./images/logo-light.png" alt="">
+            </div>
+          </div>
+          <div class="header__inner-row row">
+          </div>
+          <!-- <button class="burger" id="menuBtn"></button> -->
         </div>
       </div>
     </header>
@@ -35,7 +42,7 @@
       <div class="autoContainer">
         <div class="blog__inner">
           <div class="blog__inner-body">
-            <div class="blog__inner-column _sm">
+            <div class="blog__inner-row rowSm">
               <div class="blog__inner-social">
                 <a href="https://t.me/+E7euzTzj6RA3ZmFk" class="button button--ico">
                   <span class="ico">
@@ -79,7 +86,7 @@
                 </a>
               </div>
             </div>
-            <div class="blog__inner-column _lg">
+            <div class="blog__inner-row rowLg">
               <div class="blog__inner-content">
                 <p>
                   Instant Messaging 3.0,
@@ -87,9 +94,11 @@
                   blockchain-secured phone numbers, NFT confirming ownership of each number,
                   revolutionary features, access to private lounges thanks to the CNKS token.
                 </p>
-                <div class="blog__inner-image">
+                <div class="blog__inner-video">
                   <div class="ratioImage">
-                    <img src="./images/globus.png" alt="">
+                    <video autoplay loop mute>
+                      <source src="./images/earth.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </div>
               </div>
@@ -99,14 +108,14 @@
                 </h4>
               </div>
             </div>
-            <div class="blog__inner-column">
-              <div class="blog__inner-container">
-                <div class="blog__inner-banner">
-                  <div class="ratioImage ratioImage--contain">
-                    <img src="./images/blog/blog-1.png" alt="">
-                  </div>
+            <div class="blog__inner-row row">
+              <div class="blog__inner-banner">
+                <div class="ratioImage ratioImage--contain">
+                  <img src="./images/blog/blog-1.png" alt="">
                 </div>
-                <div class="blog__inner-frame">
+              </div>
+              <div class="blog__inner-frame">
+                <div class="ratioImage">
                   <iframe src="https://youtu.be/gZcEWMO3wmo" frameborder="0"></iframe>
                 </div>
               </div>
@@ -186,12 +195,6 @@
           </div>
         </div>
       </div>
-      <div class="blog__lines">
-        <div class="line _top">
-        </div>
-      </div>
-      <div class="blog__bg">
-      </div>
     </section>
     <!-- #blog end -->
 
@@ -202,7 +205,7 @@
           <a href="#">
             &copy;
           </a>
-          <a href="#" class="">
+          <a href="#">
             2023
           </a>
           <a href="https://goo.gl/maps/Bx3yqJ7aDppzPWZy6" class="footer__inner-link">
@@ -218,7 +221,6 @@
     <div class="main__bg">
     </div>
   </div>
-  <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

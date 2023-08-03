@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
-  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <link rel="icon" href="images/logo-lg.png" />
   <title>Home</title>
 </head>
 
@@ -16,15 +16,21 @@
     <header class="header" id="header">
       <div class="autoContainer">
         <div class="header__inner">
-          <a href="/" class="header__inner-logo">
-            <span class="logo">
-              <img src="images/logo-lg.png" alt="%ProjectName%" />
-            </span>
-          </a>
-          <div class="header__inner-image">
-            <img src="./images/logo-light.png" alt="">
+          <div class="header__inner-row rowSm">
+            <a href="/" class="header__inner-logo">
+              <span class="logo">
+                <img src="images/logo-lg.png" alt="%ProjectName%" />
+              </span>
+            </a>
           </div>
-          <button class="burger" id="menuBtn"></button>
+          <div class="header__inner-row  rowLg">
+            <div class="header__inner-image">
+              <img src="./images/logo-light.png" alt="">
+            </div>
+          </div>
+          <div class="header__inner-row row">
+          </div>
+          <!-- <button class="burger" id="menuBtn"></button> -->
         </div>
       </div>
     </header>
@@ -35,9 +41,9 @@
       <div class="autoContainer">
         <div class="blog__inner">
           <div class="blog__inner-body">
-            <div class="blog__inner-column _sm">
+            <div class="blog__inner-row rowSm">
             </div>
-            <div class="blog__inner-column _lg">
+            <div class="blog__inner-row rowLg">
               <div class="blog__inner-info">
                 <p>
                   THIS WEBSITE IS OWNED AND OPERATED BY
@@ -87,12 +93,10 @@
               <div class="blog__inner-wrapper _sm">
               </div>
             </div>
-            <div class="blog__inner-column">
-              <div class="blog__inner-container">
-                <div class="blog__inner-banner _lg">
-                  <div class="ratioImage ratioImage--contain">
-                    <img src="./images/blog/blog-2.jpeg" alt="">
-                  </div>
+            <div class="blog__inner-row row">
+              <div class="blog__inner-banner _lg">
+                <div class="ratioImage ratioImage--contain">
+                  <img src="./images/blog/blog-2.jpeg" alt="">
                 </div>
               </div>
               <div class="blog__inner-group">
@@ -139,7 +143,7 @@
           <a href="#">
             &copy;
           </a>
-          <a href="#" class="">
+          <a href="#">
             2023
           </a>
           <a href="https://goo.gl/maps/Bx3yqJ7aDppzPWZy6" class="footer__inner-link">
@@ -155,7 +159,6 @@
     <div class="main__bg">
     </div>
   </div>
-  <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>
