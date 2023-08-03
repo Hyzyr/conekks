@@ -822,6 +822,7 @@ svg {
   padding: 1.25rem;
   margin: 0 auto;
   width: 100%;
+  max-width: 16rem;
 }
 .blog__inner-social .button {
   margin-right: auto;
@@ -875,7 +876,7 @@ svg {
   padding: 1.25rem;
 }
 .blog__inner-banner .ratioImage {
-  padding-bottom: 57%;
+  padding-bottom: 56%;
 }
 .blog__inner-banner._lg .ratioImage {
   padding-bottom: 100%;
@@ -892,7 +893,7 @@ svg {
   left: 0;
 }
 .blog__inner-frame .ratioImage {
-  padding-bottom: 57%;
+  padding-bottom: 56%;
 }
 .blog__inner-group {
   display: -webkit-box;
@@ -914,23 +915,28 @@ svg {
   padding: 1rem 1.25rem 1rem;
   gap: 0.31rem;
 }
-.blog__inner-box h4,
-.blog__inner-box h5,
-.blog__inner-box h6 {
+.blog__inner-box a {
   font-weight: 400;
   text-decoration: underline;
   text-transform: uppercase;
   text-align: center;
-}
-.blog__inner-box h4 {
-  font-size: 1.375rem;
-}
-.blog__inner-box h5 {
-  margin-top: 0.9375rem;
+  color: #fff;
   font-size: 1.125rem;
+  margin-top: 0.9375rem;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
 }
-.blog__inner-box h6 {
+.blog__inner-box a:hover {
+  color: #dca155;
+}
+.blog__inner-box a._lg {
+  font-size: 1.375rem;
+  margin-top: unset;
+}
+.blog__inner-box a._sm {
   font-size: 0.875rem;
+  margin-top: unset;
 }
 .blog__inner .input {
   margin: 0 auto;
@@ -1277,14 +1283,14 @@ svg {
   .blog__inner-box {
     padding: 2rem 0;
   }
-  .blog__inner-box h4 {
-    font-size: 1.2rem;
-  }
-  .blog__inner-box h5 {
+  .blog__inner-box a {
     font-size: 1rem;
   }
-  .blog__inner-box h6 {
+  .blog__inner-box a._sm {
     font-size: 0.7rem;
+  }
+  .blog__inner-box a._lg {
+    font-size: 1.2rem;
   }
   .blog__inner-footer {
     padding: 30px 0;
