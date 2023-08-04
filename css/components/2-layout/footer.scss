@@ -1,5 +1,6 @@
 /// section footer
 .footer {
+  border-bottom: 1px solid $black-3;
   &__inner {
     display: flex;
     a {
@@ -32,6 +33,7 @@
       padding: 1rem;
       display: flex;
       gap: 1.5rem;
+      border-bottom: unset !important;
     }
   }
   .column {
@@ -45,6 +47,7 @@
 @mixin footer-840 {
   .footer {
     padding: 20px 0;
+    border-bottom: unset;
     &__inner {
       padding: 0;
       gap: 20px;

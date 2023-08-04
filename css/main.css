@@ -547,6 +547,9 @@ svg {
      object-fit: contain;
 }
 
+.footer {
+  border-bottom: 1px solid #404040;
+}
 .footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,6 +589,7 @@ svg {
   display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
+  border-bottom: unset !important;
 }
 .footer .columnSm {
   display: -webkit-box;
@@ -1133,6 +1137,7 @@ svg {
 
   .footer {
     padding: 20px 0;
+    border-bottom: unset;
   }
   .footer__inner {
     padding: 0;
