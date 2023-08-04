@@ -212,6 +212,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      border-bottom: unset !important;
     }
   }
   .autoContainer {
@@ -224,7 +225,7 @@
 ._hide {
   display: none;
 }
-.row {
+.column {
   width: 29%;
   border: 1px solid $black-3;
   border-top: unset;
@@ -443,7 +444,7 @@
       }
     }
   }
-  .row {
+  .column {
     border: unset;
     width: 100%;
     &Sm {
