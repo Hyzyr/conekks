@@ -58,6 +58,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-size: 1em;
+  min-height: 100vh;
 }
 body.active {
   overflow: hidden;

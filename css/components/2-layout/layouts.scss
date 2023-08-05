@@ -41,7 +41,7 @@
     &-social {
       display: flex;
       flex-direction: column;
-      gap: 0.625rem;
+      // gap: 0.625rem;
       padding: 1.25rem;
       margin: 0 auto;
       width: 100%;
@@ -83,7 +83,7 @@
     &-banner {
       padding: 1.25rem;
       .ratioImage {
-        padding-bottom: 56%;
+        padding-bottom: 54%;
       }
       &._lg {
         .ratioImage {
@@ -102,7 +102,7 @@
         left: 0;
       }
       .ratioImage {
-        padding-bottom: 56%;
+        padding-bottom: 54%;
       }
     }
     &-group {
@@ -182,6 +182,7 @@
         }
         &:nth-child(2) {
           .button {
+            margin-bottom: 0;
             &:nth-child(1) {
               left: 1rem;
             }
@@ -316,6 +317,9 @@
       &-frame {
         order: -1;
         padding: 0;
+        .ratioImage {
+          padding-bottom: 60%;
+        }
       }
       &-contact {
         display: flex;
@@ -323,6 +327,7 @@
         width: 100%;
         margin: 0 auto;
         padding: 2.5rem 0;
+        gap: 0;
         &-body {
           gap: 1rem;
           justify-content: space-between;
@@ -461,11 +466,12 @@
   .blog {
     &__inner {
       &-contact {
+        gap: 0.2rem;
         &-body {
           .button {
             font-size: 0.75rem;
             &._sm {
-              font-size: 0.55rem;
+              font-size: 0.6rem;
             }
             &._lg {
               font-size: 0.85rem;

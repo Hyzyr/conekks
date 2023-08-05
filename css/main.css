@@ -253,6 +253,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-size: 1em;
+  min-height: 100vh;
 }
 
 body.active {
@@ -427,23 +428,24 @@ svg {
   color: #000;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .button--ico {
-  width: 5.125em;
-  height: 3.652em;
-  border-radius: 1em;
+  width: 5.2em;
+  height: 5.2em;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
+  padding: 0;
+  margin-bottom: -1rem;
 }
 .button--ico .ico {
-  width: 2.2em;
-  height: 2.2em;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,10 +464,6 @@ svg {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.button--ico .ico._sm {
-  width: 2em;
-  height: 2em;
-}
 .button--ico .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,36 +475,6 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   height: 65%;
-}
-.button--ico::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(45deg, #d39c49 0%, #d39c49 12%, white 50%, #d6a357 90%, #d39c49 100%);
-  z-index: -1;
-}
-.button--ico:after {
-  content: "";
-  width: 0.93rem;
-  height: 0.93rem;
-  bottom: -0.3rem;
-  left: 0.8em;
-  position: absolute;
-  background: #dca155;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: -2;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.button--ico._right:after {
-  left: unset;
-  right: 0.8em;
-  background: #fff3e4;
 }
 .button--ico:hover {
   -webkit-transform: scale(0.95);
@@ -628,7 +596,7 @@ svg {
           justify-content: center;
   min-width: 70px;
   margin: 0 auto;
-  width: 35%;
+  width: 40%;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -833,7 +801,6 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.625rem;
   padding: 1.25rem;
   margin: 0 auto;
   width: 100%;
@@ -891,7 +858,7 @@ svg {
   padding: 1.25rem;
 }
 .blog__inner-banner .ratioImage {
-  padding-bottom: 56%;
+  padding-bottom: 54%;
 }
 .blog__inner-banner._lg .ratioImage {
   padding-bottom: 100%;
@@ -908,7 +875,7 @@ svg {
   left: 0;
 }
 .blog__inner-frame .ratioImage {
-  padding-bottom: 56%;
+  padding-bottom: 54%;
 }
 .blog__inner-group {
   display: -webkit-box;
@@ -1007,6 +974,9 @@ svg {
 }
 .blog__inner-contact-body:nth-child(1) .button:nth-child(4) {
   bottom: -0.8rem;
+}
+.blog__inner-contact-body:nth-child(2) .button {
+  margin-bottom: 0;
 }
 .blog__inner-contact-body:nth-child(2) .button:nth-child(1) {
   left: 1rem;
@@ -1145,7 +1115,7 @@ svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .footer__inner a {
     font-size: 0.9rem;
@@ -1255,6 +1225,9 @@ svg {
             order: -1;
     padding: 0;
   }
+  .blog__inner-frame .ratioImage {
+    padding-bottom: 60%;
+  }
   .blog__inner-contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1263,6 +1236,7 @@ svg {
     width: 100%;
     margin: 0 auto;
     padding: 2.5rem 0;
+    gap: 0;
   }
   .blog__inner-contact-body {
     gap: 1rem;
@@ -1398,11 +1372,14 @@ svg {
     padding: 0 15px;
   }
 
+  .blog__inner-contact {
+    gap: 0.2rem;
+  }
   .blog__inner-contact-body .button {
     font-size: 0.75rem;
   }
   .blog__inner-contact-body .button._sm {
-    font-size: 0.55rem;
+    font-size: 0.6rem;
   }
   .blog__inner-contact-body .button._lg {
     font-size: 0.85rem;
