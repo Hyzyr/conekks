@@ -261,6 +261,22 @@
   }
 }
 
+@mixin blog-1440-800 {
+  .blog {
+    &__inner {
+      &-banner {
+        .ratioImage {
+          padding-bottom: 63%;
+        }
+      }
+      &-frame {
+        .ratioImage {
+          padding-bottom: 63%;
+        }
+      }
+    }
+  }
+}
 @mixin blog-840 {
   .blog {
     height: auto;

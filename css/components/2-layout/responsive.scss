@@ -7,8 +7,8 @@
   html {
     font-size: 1.8vh;
   }
+  @include blog-1440-800;
 }
-
 @media (max-width: 1440px) {
 }
 @media (max-width: 1025px) {

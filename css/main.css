@@ -1148,6 +1148,13 @@ svg {
   html {
     font-size: 1.8vh;
   }
+
+  .blog__inner-banner .ratioImage {
+    padding-bottom: 63%;
+  }
+  .blog__inner-frame .ratioImage {
+    padding-bottom: 63%;
+  }
 }
 @media (max-width: 840px) {
   html {
