@@ -1035,7 +1035,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 .blog__inner-contact-body:nth-child(1) .button:nth-child(2) {
   top: 0.5rem;
@@ -1064,10 +1064,10 @@ svg {
   position: relative;
 }
 .blog__inner-contact .button._sm {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
 }
 .blog__inner-contact .button._lg {
-  font-size: 1.45rem;
+  font-size: 1.4rem;
 }
 .blog__inner-row {
   display: -webkit-box;
@@ -1148,6 +1148,7 @@ svg {
   html {
     font-size: 1.8vh;
   }
+
   .blog__inner-banner .ratioImage {
     padding-bottom: 63%;
   }
@@ -1159,9 +1160,15 @@ svg {
   html {
     font-size: 20px;
   }
+
   .autoContainer {
     padding: 0 20px;
   }
+
+  .button--ico {
+    margin-bottom: -1rem;
+  }
+
   .header {
     background: unset;
     width: 100%;
@@ -1200,6 +1207,7 @@ svg {
   .header .autoContainer {
     padding: 0 20px;
   }
+
   .footer {
     padding: 20px 0;
     border-bottom: unset;
@@ -1238,6 +1246,7 @@ svg {
   .footer__inner .columnLg {
     width: auto;
   }
+
   .blog {
     height: auto;
     padding: 30px 0;
@@ -1409,18 +1418,6 @@ svg {
   .blog__inner-social {
     display: none;
   }
-  .blog__inner-benefit {
-    padding: 1.25rem 0;
-  }
-  .blog__inner-benefit-image {
-    width: calc(33% - 0.5rem);
-  }
-  .blog__inner-benefit-image .ratioImage img:nth-child(1) {
-    display: none;
-  }
-  .blog__inner-benefit-image .ratioImage img:nth-child(2) {
-    display: block;
-  }
   .blog .input {
     padding: 15px 0;
     max-width: 500px;
@@ -1450,6 +1447,7 @@ svg {
   .blog .columnSm {
     display: none;
   }
+
   .column {
     border: unset;
     width: 100%;
@@ -1472,9 +1470,11 @@ svg {
   html {
     font-size: 4.5vw;
   }
+
   .autoContainer {
     padding: 0 15px;
   }
+
   .blog__inner-contact {
     gap: 0.2rem;
   }
@@ -1498,17 +1498,5 @@ svg {
   }
   .blog__inner-info._sm {
     width: 76%;
-  }
-  .blog__inner-benefit {
-    padding: 1.25rem 0;
-  }
-  .blog__inner-benefit-image {
-    width: 24%;
-  }
-  .blog__inner-benefit-image .ratioImage img:nth-child(1) {
-    display: none;
-  }
-  .blog__inner-benefit-image .ratioImage img:nth-child(2) {
-    display: block;
   }
 }

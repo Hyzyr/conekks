@@ -165,7 +165,7 @@
       padding: 3rem 1.25rem 2rem;
       &-body {
         display: flex;
-        gap: 1.8rem;
+        gap: 2rem;
         &:nth-child(1) {
           .button {
             &:nth-child(2) {
@@ -201,10 +201,10 @@
         font-size: 1.2rem;
         position: relative;
         &._sm {
-          font-size: 1.25rem;
+          font-size: 0.9rem;
         }
         &._lg {
-          font-size: 1.45rem;
+          font-size: 1.4rem;
         }
       }
     }
@@ -449,22 +449,6 @@
       &-social {
         display: none;
       }
-      &-benefit {
-        padding: 1.25rem 0;
-        &-image {
-          width: calc(33% - 0.5rem);
-          .ratioImage {
-            img {
-              &:nth-child(1) {
-                display: none;
-              }
-              &:nth-child(2) {
-                display: block;
-              }
-            }
-          }
-        }
-      }
     }
     .input {
       padding: 15px 0;
@@ -542,23 +526,6 @@
         }
         &._sm {
           width: 76%;
-        }
-      }
-      &-benefit {
-        padding: 1.25rem 0;
-
-        &-image {
-          width: 24%;
-          .ratioImage {
-            img {
-              &:nth-child(1) {
-                display: none;
-              }
-              &:nth-child(2) {
-                display: block;
-              }
-            }
-          }
         }
       }
     }
