@@ -213,4 +213,10 @@
     opacity: 0.98;
   }
 }
-
+@mixin components-840 {
+  .button {
+    &--ico {
+      margin-bottom: -1rem;
+    }
+  }
+}

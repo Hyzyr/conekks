@@ -20,6 +20,7 @@
   .autoContainer {
     padding: 0 20px;
   }
+  @include components-840;
   @include header-840;
   @include footer-840;
   @include blog-840;
