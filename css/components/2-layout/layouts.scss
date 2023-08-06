@@ -88,7 +88,7 @@
     }
     &-frame {
       position: relative;
-      padding: 0.5rem 1.25rem;
+      padding: 0rem 1.25rem;
       iframe {
         position: absolute;
         width: 100%;
@@ -153,6 +153,10 @@
           margin-bottom: 2rem;
         }
       }
+      &._sm {
+        width: calc(67% - 1rem);
+        padding: 0;
+      }
     }
     &-contact {
       display: flex;
@@ -209,6 +213,24 @@
       flex-direction: column;
       justify-content: space-between;
       border-bottom: unset !important;
+    }
+    &-benefit {
+      display: flex;
+      padding: 1.25rem;
+      gap: 0.5rem;
+      &-image {
+        width: calc(33% - 1rem);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        .ratioImage {
+          img {
+            &:nth-child(2) {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
   .autoContainer {
@@ -412,6 +434,22 @@
       &-social {
         display: none;
       }
+      &-benefit {
+        padding: 1.25rem 0;
+        &-image {
+          width: calc(33% - 0.5rem);
+          .ratioImage {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+        }
+      }
     }
     .input {
       padding: 15px 0;
@@ -486,6 +524,26 @@
       &-info {
         p {
           font-size: 0.9rem;
+        }
+        &._sm {
+          width: 76%;
+        }
+      }
+      &-benefit {
+        padding: 1.25rem 0;
+
+        &-image {
+          width: 24%;
+          .ratioImage {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
         }
       }
     }
