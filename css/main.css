@@ -1148,7 +1148,6 @@ svg {
   html {
     font-size: 1.8vh;
   }
-
   .blog__inner-banner .ratioImage {
     padding-bottom: 63%;
   }
@@ -1160,11 +1159,9 @@ svg {
   html {
     font-size: 20px;
   }
-
   .autoContainer {
     padding: 0 20px;
   }
-
   .header {
     background: unset;
     width: 100%;
@@ -1203,7 +1200,6 @@ svg {
   .header .autoContainer {
     padding: 0 20px;
   }
-
   .footer {
     padding: 20px 0;
     border-bottom: unset;
@@ -1242,7 +1238,6 @@ svg {
   .footer__inner .columnLg {
     width: auto;
   }
-
   .blog {
     height: auto;
     padding: 30px 0;
@@ -1455,7 +1450,6 @@ svg {
   .blog .columnSm {
     display: none;
   }
-
   .column {
     border: unset;
     width: 100%;
@@ -1478,11 +1472,9 @@ svg {
   html {
     font-size: 4.5vw;
   }
-
   .autoContainer {
     padding: 0 15px;
   }
-
   .blog__inner-contact {
     gap: 0.2rem;
   }
