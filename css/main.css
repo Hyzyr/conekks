@@ -630,7 +630,7 @@ svg {
   transition: 0.3s ease-in-out;
 }
 .footer__inner-row {
-  padding: 1.8rem 1.2rem;
+  padding: 1.2rem 1.2rem 2.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
