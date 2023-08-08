@@ -30,7 +30,7 @@
       }
     }
     &-row {
-      padding: 1.2rem 1.2rem 2.2rem;
+      padding: 1.8rem 1.2rem;
       display: flex;
       gap: 1.5rem;
       border-bottom: unset !important;
@@ -46,7 +46,7 @@
 }
 @mixin footer-840 {
   .footer {
-    padding: 20px 0;
+    padding: 15px 0 35px;
     border-bottom: unset;
     &__inner {
       padding: 0;
